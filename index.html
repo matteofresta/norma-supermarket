@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <!-- Meta-Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Norma Supermarkt</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Boxicons für Icons -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!-- Swiper CSS für den Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <!-- CSS-Datei -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="bilder/logo_norma_tablet.png" alt="Norma Logo">
+    </div>
+    <nav>
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="hamburger">
+        <box-icon name='menu' color='#ffffff'></box-icon>
+      </label>
+      <ul class="menu">
+        <li><a href="#">Startseite</a></li>
+        <li class="dropdown">
+          <a href="#">Produkte</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Lebensmittel</a></li>
+            <li><a href="#">Getränke</a></li>
+            <li><a href="#">Frisches Obst & Gemüse</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Angebote</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li class="cart-icon">
+          <a href="#"><box-icon name='cart-alt' color='#ffffff' size="md"></box-icon></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" placeholder="Produkte suchen...">
+      <button type="submit" aria-label="Search">
+        <box-icon name='search-alt-2' color='#ffffff' ></box-icon>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hauptinhalt -->
+<main>
+  <!-- Willkommen Section mit Video-Hintergrund -->
+  <section class="welcome">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="video/9020663-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      Ihr Browser unterstützt kein HTML5 Video.
+    </video>
+    <div class="welcome-content">
+      <h1>Willkommen bei Norma</h1>
+      <p>Ihr zuverlässiger Partner für Qualität und Frische.</p>
+      <a href="#products-norma" class="cta-button">Mehr erfahren</a>
+    </div>
+  </section>
+
+  <!-- Standort Section -->
+  <section class="location">
+    <div class="container">
+      <h2>Unser Standort in Grafing bei München</h2>
+      <p>Besuchen Sie uns in unserer Filiale und erleben Sie erstklassigen Service.</p>
+      <div class="map-container">
+        <!-- Ersetze den src-Wert mit dem korrekten Embed-Link von Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.5533800270414!2d11.965863271331328!3d48.0442700071819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dfef2023fab4d%3A0x7eff693c68c7742d!2sNORMA%20Filiale!5e0!3m2!1sde!2sde!4v1726777436162!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider Section -->
+  <section class="hero">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="bilder/2022_kw18_obst-gemuese_V2.jpg" alt="Qualität und Frische">
+          <div class="slide-caption">
+            <h2>Qualität und Frische</h2>
+            <p>Entdecken Sie unsere Vielfalt an frischem Obst und Gemüse.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="bilder/2023_kw40_norma-online_neue-app.jpg" alt="Beste Angebote">
+          <div class="slide-caption">
+            <h2>Unsere neue App</h2>
+            <p>Jetzt herunterladen und exklusive Angebote sichern.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="bilder/2024_kw35_normagazin.jpg" alt="Fairtrade Produkte">
+          <div class="slide-caption">
+            <h2>Das neue NORMA-Magazin</h2>
+            <p>Entdecken Sie spannende Inhalte rund um unsere Produkte.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slider-Navigation -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigationspfeile -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Fairtrade Section -->
+  <section class="fairtrade">
+    <div class="container">
+      <h2>Unsere Fairtrade-Produkte</h2>
+      <img src="bilder/csm_fairtrade-logo_aa07de241b.webp" alt="Fairtrade Banner" class="fairtrade-banner">
+      <p>Wir setzen uns für fairen Handel und nachhaltige Produktion ein. Entdecken Sie unsere Auswahl an Fairtrade-Produkten.</p>
+      <div class="fairtrade-products">
+        <div class="product">
+          <img src="bilder/black-forest-coffee-espresso-bio-fairtrade-bohnen.webp" alt="Kaffee aus fairem Handel">
+          <h3>Kaffee aus fairem Handel</h3>
+        </div>
+        <div class="product">
+          <img src="bilder/Vor-allem-Fairtrade-Bananen-wurden-gut-verkauft.-99408.jpeg" alt="Bio-Bananen">
+          <h3>Bio-Bananen</h3>
+        </div>
+        <!-- Weitere Fairtrade-Produkte hinzufügen -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Produkte Section -->
+  <section id="products-norma" class="products">
+    <div class="container">
+      <h2>Unsere Produkte</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="discount-badge">35% Rabatt</div>
+          <img src="bilder/200_volvic-juicy_wo_1.jpg" alt="Volvic Juicy">
+          <div class="product-info">
+            <h3>Volvic Juicy</h3>
+            <p class="subtitle">Erfrischendes Mineralwasser mit Fruchtgeschmack</p>
+            <p class="description">Genießen Sie die natürliche Frische von Volvic Juicy, angereichert mit köstlichem Fruchtaroma.</p>
+            <p class="price">
+              <span class="old-price">1,99 €</span>
+              <span class="new-price">1,29 €</span>
+            </p>
+            <button class="add-to-cart">In den Warenkorb</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="discount-badge">20% Rabatt</div>
+          <img src="bilder/bio-aepfel_wo_1.jpg" alt="Bio-Apfel">
+          <div class="product-info">
+            <h3>Bio-Apfel</h3>
+            <p class="subtitle">Frisch und knackig aus regionalem Anbau</p>
+            <p class="description">Unsere Bio-Äpfel sind saftig und voller Geschmack, ideal für einen gesunden Snack.</p>
+            <p class="price">
+              <span class="old-price">5,99 €</span>
+              <span class="new-price">3,48 €</span>
+            </p>
+            <button class="add-to-cart">In den Warenkorb</button>
+          </div>
+        </div>
+        <!-- Weitere Produkte hinzufügen -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Abonnieren Sie unseren Newsletter</h2>
+    <form action="#" method="POST">
+      <input type="email" placeholder="E-Mail-Adresse eingeben" required>
+      <button type="submit">Abonnieren</button>
+    </form>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Unternehmen</h3>
+      <ul>
+        <li><a href="#">Über uns</a></li>
+        <li><a href="#">Karriere</a></li>
+        <li><a href="#">Nachhaltigkeit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Kundenservice</h3>
+      <ul>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Rückgabe</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Bleiben Sie verbunden</h3>
+      <ul class="social-icons">
+        <li><a href="#"><box-icon type='logo' name='facebook' color="#ffffff"></box-icon></a></li>
+        <li><a href="#"><box-icon name='instagram' type='logo' color='#ffffff' ></box-icon></a></li>
+        <li><a href="#"><box-icon type='logo' name='twitter' color='#ffffff'></box-icon></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Rechtliches</h3>
+      <ul>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">AGB</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Norma Supermarkt. Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
+
+<!-- Zurück nach oben Button -->
+<button id="back-to-top"><box-icon name='up-arrow-alt' color='#ffffff' size="xl" ></box-icon></button>
+
+<!-- Swiper JS für den Slider -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- JavaScript-Datei -->
+<script src="script.js"></script>
+</body>
+</html>
