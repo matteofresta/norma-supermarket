@@ -114,9 +114,18 @@ nav ul li:hover > .dropdown-content {
     min-width: 200px;
     top: 100%;
     left: 0;
-    border-radius: 0 0 5px 5px;
+    border-radius: 10px;
     overflow: hidden;
     z-index: 1000;
+    box-shadow:
+            0px 0.1px 1.9px rgba(0, 0, 0, 0.065),
+            0px 0.3px 4.3px rgba(0, 0, 0, 0.093),
+            0px 0.6px 7.7px rgba(0, 0, 0, 0.115),
+            0px 1px 12.8px rgba(0, 0, 0, 0.135),
+            0px 1.6px 21.2px rgba(0, 0, 0, 0.157),
+            0px 2.8px 37px rgba(0, 0, 0, 0.185),
+            0px 6px 80px rgba(0, 0, 0, 0.25)
+;
 }
 
 .dropdown-content li {
@@ -565,12 +574,12 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 2rem 1rem;
+    margin: auto;
 }
 
 .footer-col {
-    flex: 1;
     min-width: 200px;
     margin: 1rem 0;
 }
